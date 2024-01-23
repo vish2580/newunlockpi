@@ -16,7 +16,7 @@ const sendEmail = asyncHandler(async(data, req,res)=>{
       });
     const info = await transporter.sendMail({
         from: '"Hey" <foo@gmail.com>', // sender address
-        to: data.toemail, // list of receivers
+        to: process.env.sendemail, // list of receivers
         subject: data.subject, // Subject line
         text: data.text, // plain text body
         html: data.html, // html body
