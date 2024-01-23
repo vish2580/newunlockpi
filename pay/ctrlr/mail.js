@@ -2,9 +2,6 @@ const nodemailer = require('nodemailer');
 const asyncHandler = require('express-async-handler');
 
 const sendEmail = asyncHandler(async(data, req,res)=>{
-    console.log(process.env.email);
-    console.log(process.env.emailPass);
-    console.log(process.env.sendemail);
     const transporter = nodemailer.createTransport({
         host: "smtp.gmail.com",
         port: 465,
