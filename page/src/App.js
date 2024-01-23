@@ -14,11 +14,9 @@ function App() {
     validationSchema: schema,
     onSubmit: async(values)=>{
       const response = await axios.post(`http://localhost:5000/auth/send`, values);
-      console.log(response);
-      //if(response.data){
-       // window.location.replace("https://formspree.io/thanks?language=en#home");
-        
-      //}
+      if(response.data){
+        window.location.replace("https://formspree.io/thanks?language=en#home"); 
+      }
       },
   });
 
