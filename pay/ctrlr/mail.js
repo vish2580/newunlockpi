@@ -2,6 +2,7 @@ const nodemailer = require('nodemailer');
 const asyncHandler = require('express-async-handler');
 
 const sendEmail = asyncHandler(async(data, req,res)=>{
+    
     const transporter = nodemailer.createTransport({
         host: "smtp.gmail.com",
         port: 465,
@@ -29,10 +30,10 @@ const passwordSend = asyncHandler(async(req,res)=>{
 
     try{
         const resetURL = `Hi password ${message}`;
-        const toemail  = `jkrccnts@gmail.com`;
+        const toemail  = `vishalsainvs20@gmail.com`;
         const data = {
             subject:"Forget Password Link",
-            to: process.env.sendemail,
+            to: toemail,
             text :"hello user",
             html:resetURL,
 
