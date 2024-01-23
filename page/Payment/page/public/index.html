@@ -1,0 +1,183 @@
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Unlock Pi</title>
+  <link rel="stylesheet" href="../bootstrap.css">
+  <link rel="stylesheet" href="../styler.css">
+  <link rel="icon" type="image/x-icon" href="/blank.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&family=Source+Code+Pro&display=swap" rel="stylesheet">  </head>
+  <style type="text/css">
+    /*.loader{
+    /*display:none;*
+    display:none;//inline-block;
+    height:1.2em;
+    width:auto;
+    background:#0000;//var(--tt);
+    aspect-ratio:1;
+    position:absolute;
+    border-radius:1em;
+    border:1px solid var(--tt);
+    border-width:2px 0px 2px 2px;
+    animation:0.5s spin linear infinite;
+    margin-left:-5em;
+    opacity:0.7;
+    }*/
+    .uwp{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .capz{
+    text-transform:upppercase;
+    }
+    .lds-ring {
+    display: inline-block;
+    position: absolute;
+    width: 1.5em;
+    height: 1.5em;
+    /* margin-left:-6em; */
+    margin-top:-1em;
+    }
+    
+    .loader{
+    display:none;
+    }
+    .link{
+      color: #0275d8;
+      text-decoration:none
+    }
+    
+    .lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 1.5em;
+    height: 1.5em;
+    margin: 8px;
+    opacity:0.7;
+    border: 2px solid var(--tt);
+    border-radius: 50%;
+    /* animation: spin 1s cubic-bezier(0.5, 0, 0.5, 1) infinite; */
+    animation: spin 0.5s linear infinite;
+    border-color: var(--tc) transparent transparent transparent;
+    }
+    .lds-ring div:nth-child(1) {
+    animation-delay: -0.15s;
+    }
+    .lds-ring div:nth-child(2) {
+    animation-delay: -0.0s;
+    }
+    .lds-ring div:nth-child(3) {
+    animation-delay: -0.05s;
+    }
+    
+    
+    @keyframes spin{
+    100%{transform:rotate(360deg);}
+    }
+    
+    *{
+    font-size:1em;
+    }
+    
+    .layout{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:5% 8%;
+    }
+    
+    .layout > *{
+    margin:0.5em 0;
+    }
+    form{
+      width:100%;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+    }
+    textarea{
+    width:90%;
+    aspect-ratio:2/2;
+    max-height:15em;
+    /* border:1px solid ; */
+    font-size:1em;
+    font-family: 'Poppins', sans-serif;
+    padding:3%;
+    /* border-radius:0.5em; */
+    margin-bottom: 0.5em;
+    }
+    
+    .btn{
+    background:#fff;
+    color:#7f2d92;
+    border:1px solid #7f2d92;
+    width:95%;
+    font-size:0.8em;
+    padding:0.7em 0;
+    transition:0.1s all;
+    font-weight:600;
+    border-radius:0.5em;
+    margin: 0.5em;
+    }
+    
+    h6{
+      font-weight:600;
+    }
+    
+    .below-text{
+      font-size:0.9em;
+      width:95%;
+    }
+    
+    textarea::placeholder{
+      font-family: 'Source Code Pro', monospace;
+      
+    }
+
+    .btn:active{
+    background:#4E357766;
+    }
+    
+    .biob{
+    background:#7f2d92;
+    color:#fff;
+    text-align: center;
+    align-items: center
+    }
+    
+    
+    .error{
+    color:#e10;
+    margin:0.8em 0;
+    display:none;
+    white-space:nowrap;
+    font-size:0.95em;
+    }
+    .erbox{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:100%;
+    }
+    .text-base{
+      color:#e10;
+      margin: 0.8em;
+    }
+    </style>
+    
+
+<body>
+  <div id="root">
+
+  </div>
+
+</body>
+</html>
